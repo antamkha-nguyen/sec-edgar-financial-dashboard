@@ -16,26 +16,26 @@ Data source comes from a free, public government source, and refreshes whenever 
 
 **Company overview.** Pick one company and see its key numbers, a trend line, and year-over-year growth.
 
-<img width="900" height="600" alt="Overview_page" src="https://github.com/user-attachments/assets/4c6700b1-63ae-4a46-9b25-3ffeabe00850" />
+<img width="950" height="600" alt="Overview_page" src="https://github.com/user-attachments/assets/4c6700b1-63ae-4a46-9b25-3ffeabe00850" />
 
 
 For example, here is how Apple (AAPL) should look like:
 
-<img width="900" height="700" alt="AAPL_Overview" src="https://github.com/user-attachments/assets/d86c4625-c976-4b69-9883-820282f2a41d" />
+<img width="950" height="600" alt="AAPL_Overview" src="https://github.com/user-attachments/assets/d86c4625-c976-4b69-9883-820282f2a41d" />
 
 
 **Comparison.** All three companies side by side, growth rebased to a common starting point so differently sized companies are easy to compare.
 
-<img width="900" height="700" alt="Comparision_page" src="https://github.com/user-attachments/assets/46b0da1b-fc3d-47f0-b9d8-f4eb6e0b5d65" />
+<img width="950" height="600" alt="Comparision_page" src="https://github.com/user-attachments/assets/46b0da1b-fc3d-47f0-b9d8-f4eb6e0b5d65" />
 
 
 **Filing details.** Every number traced back to the actual SEC filing it came from.
 
-<img width="900" height="700" alt="Filings_page" src="https://github.com/user-attachments/assets/9c73ed29-5e2f-4005-8231-b048187c05ff" />
+<img width="950" height="600" alt="Filings_page" src="https://github.com/user-attachments/assets/9c73ed29-5e2f-4005-8231-b048187c05ff" />
 
 **Data Modeling View**
 
-<img width="900" height="700" alt="Data_Modeling" src="https://github.com/user-attachments/assets/287d06a1-f272-4a5c-8ceb-fd1a6da6035b" />
+<img width="950" height="600" alt="Data_Modeling" src="https://github.com/user-attachments/assets/287d06a1-f272-4a5c-8ceb-fd1a6da6035b" />
 
 
 ---
