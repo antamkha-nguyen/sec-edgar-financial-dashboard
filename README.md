@@ -16,23 +16,27 @@ Data source comes from a free, public government source, and refreshes whenever 
 
 **Company overview.** Pick one company and see its key numbers, a trend line, and year-over-year growth.
 
-<img src="Overview_page.png" width="700">
+<img width="1000" height="600" alt="Overview_page" src="https://github.com/user-attachments/assets/4c6700b1-63ae-4a46-9b25-3ffeabe00850" />
+
 
 For example, here is how Apple (AAPL) should look like:
 
-<img src="AAPL_Overview.png" width="700">
+<img width="1000" height="700" alt="AAPL_Overview" src="https://github.com/user-attachments/assets/d86c4625-c976-4b69-9883-820282f2a41d" />
+
 
 **Comparison.** All three companies side by side, growth rebased to a common starting point so differently sized companies are easy to compare.
 
-<img src="Comparision_page.png" width="700">
+<img width="1000" height="700" alt="Comparision_page" src="https://github.com/user-attachments/assets/46b0da1b-fc3d-47f0-b9d8-f4eb6e0b5d65" />
+
 
 **Filing details.** Every number traced back to the actual SEC filing it came from.
 
-<img src="Filings_page.png" width="700">
+<img width="1000" height="700" alt="Filings_page" src="https://github.com/user-attachments/assets/9c73ed29-5e2f-4005-8231-b048187c05ff" />
 
 **Data Modeling View**
 
-<img src="Data_Modeling-1.png" width="700">
+<img width="1000" height="700" alt="Data_Modeling" src="https://github.com/user-attachments/assets/287d06a1-f272-4a5c-8ceb-fd1a6da6035b" />
+
 
 ---
 
@@ -59,17 +63,20 @@ The example below walks through adding Alphabet (ticker GOOGL) to show how the w
 1. **Open the workbook and the Power Query editor.**
    Open `SEC_Data.xlsx`. The `financial_combined` sheet holds the finished result, one row per company, metric, and year. To see how it's built: Data tab -> Get Data -> Launch Power Query Editor.
 
-   <img src="lauch-editor.png" width="700">
+<img width="928" height="736" alt="lauch-editor" src="https://github.com/user-attachments/assets/4430a7d8-54a1-4df8-b559-8acf20176e1b" />
+
 
 2. **Find which SEC tags the company uses.**
    Companies don't all label the same thing the same way, and labels change over time. Run the `fn_FindTag` helper with the company's CIK and a keyword like "revenue." Repeat with "sales," "liabilit," and "payable" so nothing gets missed.
 
-   <img src="findtag-1.png" width="700">
+<img width="1297" height="800" alt="findtag" src="https://github.com/user-attachments/assets/32a4a2fd-5145-4085-afef-620b278066c9" />
+
 
 3. **Pull each number.**
    Run the `fn_GetConcept` helper once for Assets, once for Liabilities, and once for Accounts Payable, using the CIK and the exact tag name found in step 2. Each run comes back as a clean table, one row per fiscal year.
 
-   <img src="getconcepts.png" width="700">
+<img width="1296" height="800" alt="getconcepts" src="https://github.com/user-attachments/assets/a77895dc-052d-49ba-86bc-6252e48398a6" />
+
 
 4. **Build Revenue.**
    Revenue almost always needs more than one tag stitched together, since the label companies use for it tends to change over the years. Pull each tag, combine the results into one table, and remove any years that show up twice.
@@ -89,7 +96,8 @@ The example below walks through adding Alphabet (ticker GOOGL) to show how the w
 8. **Save it back to the sheet.**
    Home tab, Close & Load. This writes the updated table into the `financial_combined` sheet that Power BI reads from.
 
- <img src="data-table.png" width="700">
+<img width="1099" height="609" alt="data-table" src="https://github.com/user-attachments/assets/e0b6d032-460f-4921-92b9-4cfca22d3573" />
+
 
 9. **Double check the work.**
    Confirm the row count grew by roughly what you'd expect and spot check one number against the company's actual 10-K filing before trusting it.
