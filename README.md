@@ -1,6 +1,6 @@
 # SEC Financial Statement Dashboard
 
-A interactive dashboard with annual financial data for public companies that were pulled straight from the SEC's public records to compare key metrics of companies over time. Data sources are refreshed whenever a company files a new annual report.
+A interactive dashboard with annual financial data for public companies that were pulled straight from the SEC's public records to compare key metrics over time. Data sources are refreshed whenever a company files a new annual report.
 
 **Current Companies:** Apple, Microsoft, Amazon
 
